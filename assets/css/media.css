@@ -96,10 +96,10 @@
         font-size: 20px;
     }
 
-    article .news-thumb img {
-        width: 280px;
-        height: auto;
-
+    .footer-copy {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 
 

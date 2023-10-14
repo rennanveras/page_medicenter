@@ -81,7 +81,7 @@ section {
     display: flex;
     justify-content: center;
     background-image: url('../img/banner.jpg');
-    background-position: center;
+    background-position: right;
     background-size: cover;
     height: 750px;
     width: 100%;
@@ -400,6 +400,7 @@ footer .widget-title-text {
     font-weight: 400;
     color: #909090;
     margin: 30px 45px 10px 0;
+    line-height: 20px;
 }
 
 .text-item2 a {
@@ -414,11 +415,30 @@ footer .widget-title-text {
 
 .footer-copy {
     border-top:1px solid #777777;
-    height: 40px;
-    line-height:40px;
+    height: auto;
+    line-height: 20px;
     color: #909099;
     font-size:15px;
     margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+
+}
+
+.footer-copy a {
+    color: #909099;
+    transition: all .2s ease-in;
+}
+
+.footer-copy a:hover {
+    opacity: .7;
+}
+
+.footer-copy img {
+    width: 40px;
+    object-fit: cover;
 }
 
 

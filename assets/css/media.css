@@ -1,0 +1,118 @@
+@media only screen and (max-width: 1090px) {
+
+    .banner-desc {
+        width: 300px;
+    }
+
+    .banner-headline,
+    #geral section,
+    .footer-areaitem,
+    .footer-copy {
+        padding: 20px;
+    }
+
+    .appointment-text {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1036px) {
+    .banner-desc {
+        width: auto;
+    }
+
+    
+}
+
+@media only screen and (max-width: 960px) {
+    #banner {
+        height: 100vh;
+    }
+
+    .banner-options {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-headline h1 {
+        font-size: 50px;
+    }
+
+    .banner-headline h2 {
+        font-size: 20px;
+    }
+
+    .banner-options {
+        height: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        margin-right: 20px;
+        position: absolute;
+        background-color: #FFFFFF;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+
+    aside .widget {
+        padding-left: 20px;
+    }
+
+    .footer-menu,
+    .footer-area {
+        flex-direction: column;
+    }
+
+    .icones a img {
+        margin-bottom: 5px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-headline h1 {
+        font-size: 40px;
+    }
+
+    .banner-headline h2 {
+        font-size: 20px;
+    }
+
+    article .news-thumb img {
+        width: 280px;
+        height: auto;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    aside .cubes {
+        flex-direction: column;
+
+    }
+
+    .cubes {
+        width: 300px;
+        grid-template-columns:1fr;
+    }
+}

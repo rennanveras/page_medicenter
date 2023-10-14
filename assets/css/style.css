@@ -1,0 +1,424 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    
+}
+
+body { 
+    overflow-x: hidden; 
+}
+
+/* start hearder */
+header{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    margin: 0 20px;
+}
+
+.container {
+    overflow:hidden;
+    display: flex;
+    
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: inherit;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    
+}
+nav .active a, 
+nav a:hover {
+    background-color:#52b788 ;
+    color: white    ;
+}
+
+nav a {
+display: block;
+text-decoration: none;
+color:#727272;
+text-transform: uppercase;
+padding: 15px ;
+}
+
+.menuMobile {
+    display: none;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+}
+
+.mm-line {
+    height:3px;
+    background-color: #52b788;
+}
+/* end header */
+
+/* start main */
+section {
+    padding: 0 20px;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    padding: 0;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner-headline {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-headline h1 {
+    color:white;
+    font-size: 70px;
+    text-shadow: 0px 1px #000000;
+    max-width: 350px;
+    
+}
+
+.banner-headline h2 {
+    color:white;
+    font-size: 25px;
+    text-shadow: 1px 1px #000000;
+    max-width: 350px;
+    margin-top: 30px;
+    font-weight:300;
+
+    
+}
+
+.banner-options{   
+    height: 220px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    color: white;
+    padding:25px;
+}
+
+.banner1 {
+    background-color: #52b788;
+}
+
+.banner2 {
+    background-color: #40916c;
+}
+
+.banner3 {
+    background-color:#2d6a4f;
+}
+.banner-title{
+    font-size: 25px;
+}
+.banner-desc {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.banner-botton {
+    display: inline-block;
+    color: white;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.banner-day {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 10px;
+    margin: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+/* fim do banner */
+
+/* inicio dos widgets */
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex:2;
+}
+#geral aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin-top:30px ;
+    margin-bottom:20px;
+}
+.widget-title-text {
+    color: #000;
+    font-size:21px ;
+    font-weight: bold;
+}
+
+.widget-title-bar {
+    width:50px;
+    height:3px;
+    background-color: #52b788;
+    margin-top:10px ;
+    margin-bottom:10px ;
+}
+
+.cubes {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.widget-cube{
+    width:100%;
+    height: 170px;
+    background-color: #52b788;
+
+}
+
+/* fim cube */
+
+.appointment-text {
+    padding-top:15px ;
+    padding-bottom:30px;
+    border-bottom:1px solid #EEE;
+}
+
+.widget-body-appointment img {
+    margin-right: 10px;
+}
+
+.appointment-phone, .appointment-email, .appointment-form {
+    border-bottom:1px solid #EEE;
+    padding-bottom:15px;
+    margin-bottom:5px;
+    padding-top:5px;
+    display: flex;
+    align-items: center;
+}
+.appointment-phone strong {
+    font-weight: bold;
+}
+
+.widget-body-appointment  a {
+    color: #52b788;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex:1;
+    min-width: 300px;
+    margin-right:20px ;
+}
+
+article .news-data {
+    display: flex;
+}
+article .news-posted-at {
+    background-color: #2d6a4f;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news-comments {
+    background-color:  #40916c;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+article .news-thumb {
+    margin-top:30px;
+}
+
+article .news-thumb img {
+    width: 100%;
+    height: auto;
+    
+}
+
+article .news-title {
+    margin: 25px 0;
+    color: #000;
+    font-size: 25px;
+}
+
+article .news-resume {
+    font-size: 15px;
+    line-height: 20px;
+    color: #5c5c5c;
+    margin-bottom: 50px;
+
+}
+/* start rodapé */
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-menu {
+    display: flex;
+    flex: 1;
+}
+
+.fm-1, .fm-2 , .fm-3 {
+    flex: 1;
+    color: #FFFFFF;
+    
+}
+
+.fm-1 {
+    background-color: #52b788;
+}
+
+.fm-2 {
+    background-color: #40916c;
+}
+
+.fm-3 {
+    background-color:#2d6a4f;
+}
+
+.footer-menu a {
+    display: block;
+    padding: 20px;
+    color: #FFFFFF;
+    
+}
+
+.title-fm {
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.text-fm {
+    font-size: 15px;
+    margin-bottom: 22px;
+    font-weight: 200;
+    
+}
+
+.footer-area {
+    display: flex;
+}
+
+.footer-areaitem {
+    flex: 1;
+    color: white;
+}
+
+.flexcolumn {
+    flex-direction: column;
+}
+
+footer .widget-title-text {
+    color: white;
+    
+}
+
+.text-areaitem {
+    font-size: 15px;
+    font-weight: 400;
+    color: #909090;
+    margin: 30px 45px 30px 0;
+}
+
+.item-address {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px 10px 0;
+    margin-right:10px;
+    color: #909090;
+    font-weight: 500;
+}
+
+.item-address2 a {
+    color:#FFFFFF;
+}
+
+.icones img {
+    margin-top: 30px;
+    margin-bottom:90px;
+    margin-right:5px;
+    filter: invert(1);
+    transition: all 0.2s ease-in;
+}
+
+.icones img:hover {
+    opacity: 0.7;
+}
+
+.text-item2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #909090;
+    margin: 30px 45px 10px 0;
+}
+
+.text-item2 a {
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+.desc-item  {
+    font-size: 15px;
+    color: #52b788;
+}
+
+.footer-copy {
+    border-top:1px solid #777777;
+    height: 40px;
+    line-height:40px;
+    color: #909099;
+    font-size:15px;
+    margin-top:30px;
+}
+
+
